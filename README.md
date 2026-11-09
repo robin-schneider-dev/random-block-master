@@ -1,5 +1,9 @@
 # Random Block Master
 
+<p align="center">
+  <img src="docs/screenshots/cover.png" alt="Random Block Master cover" width="100%">
+</p>
+
 **Random Block Master** is an archived Android puzzle/strategy game that I developed as a solo hobby project with Unity and C# and previously released on Google Play.
 
 It combines **9x9 grid-based puzzle mechanics** with **collectible and upgradeable ability blocks**, deckbuilding, progression and an endless boss/wave mode. The project was my first larger personal Android game and became an end-to-end learning project across **game design, gameplay programming, UI/UX, backend services and mobile release workflows**.
@@ -87,11 +91,27 @@ The code is preserved primarily as a **historical portfolio sample**. It reflect
 
 ## Screenshots & Gameplay
 
-Archived Google Play artwork and gameplay screenshots will be added here.
+### Collection, Deckbuilding & Abilities
+
+<p align="center">
+  <img src="docs/screenshots/menu-modes.jpg" alt="Game modes and active deck" width="30%">
+  <img src="docs/screenshots/block-collection.jpg" alt="Block collection" width="30%">
+  <img src="docs/screenshots/block-details.jpg" alt="Block details and ability description" width="30%">
+</p>
+
+### Puzzle & Boss Gameplay
+
+<p align="center">
+  <img src="docs/screenshots/zen-gameplay.jpg" alt="Zen gameplay" width="30%">
+  <img src="docs/screenshots/takedown-gameplay.jpg" alt="Takedown gameplay" width="30%">
+  <img src="docs/screenshots/takedown-combat.jpg" alt="Takedown boss combat" width="30%">
+</p>
+
+The screenshots above are archived material from the version prepared for the original Google Play release.
 
 ## Archived Android Build
 
-A tested archived APK of the playable version can be provided through GitHub Releases.
+A tested archived APK of the playable version is available through the **[v1.0-archive GitHub Release](https://github.com/robin-schneider-dev/random-block-master/releases/tag/v1.0-archive)**.
 
 Backend-dependent functionality may no longer be available because the original online services are no longer maintained.
 
