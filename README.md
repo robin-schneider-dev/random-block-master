@@ -2,34 +2,46 @@
 
 **Random Block Master** is an archived Android puzzle/strategy game that I developed as a solo hobby project with Unity and C# and previously released on Google Play.
 
-The project combines grid-based puzzle mechanics with randomized blocks, abilities, progression and score-driven game modes. It started as my first larger personal Android game project and became an opportunity to work across **game design, gameplay programming, UI/UX, cloud services and mobile release workflows**.
+It combines **9x9 grid-based puzzle mechanics** with **collectible and upgradeable ability blocks**, deckbuilding, progression and an endless boss/wave mode. The project was my first larger personal Android game and became an end-to-end learning project across **game design, gameplay programming, UI/UX, backend services and mobile release workflows**.
 
-> **Portfolio note:** This repository is a curated source-code showcase of the original project. It is intentionally **not a complete buildable copy** of the historical Unity project. Third-party assets, production credentials and backend configuration are excluded.
+> **Portfolio note:** This repository is a curated source-code showcase of the original project. It is intentionally **not a complete buildable copy** of the historical Unity project. Production credentials, backend configuration and development-only third-party assets are excluded.
+
+## Game Concept
+
+Players collect blocks with different **rarities, upgrade levels and abilities** and build a four-block deck around the synergies they want to use.
+
+The core puzzle takes place on a **9x9 grid**. Completing rows or 3x3 sections clears parts of the board and creates opportunities for combos. Ability blocks can influence the board when they are cleared, creating additional effects and allowing different deck combinations to play very differently.
+
+The game was designed around two layers:
+
+- **Puzzle layer** — place shapes efficiently, complete rows and 3x3 sections, manage board space and build combos.
+- **Deck / ability layer** — collect, upgrade and combine blocks whose abilities interact with the puzzle board.
+
+## Game Modes
+
+### Zen
+
+A score-focused endless puzzle mode built around efficient placements, clears and increasingly strong combos.
+
+### Takedown
+
+A more combat-oriented endless mode with **bosses, waves and block power**. Bosses have health and attacks that can disrupt or block parts of the grid, making it harder to create clears and combos. Strong board setups and ability combinations allow the player to deal damage, survive the pressure and defeat successive bosses.
 
 ## Project Highlights
 
 - Solo-developed mobile game from concept to Google Play release
-- Grid-based puzzle gameplay with multiple game modes
-- Blocks with different rarities, stats and gameplay abilities
-- Combo, scoring, progression and upgrade systems
-- Boss/wave mechanics for the more combat-oriented game mode
+- 9x9 puzzle grid with row and 3x3-section clearing
+- Collectible blocks with rarities, upgrade levels and gameplay abilities
+- Deckbuilding and ability synergies
+- Combo, score and progression systems
+- Bosses, waves, health, attacks and board disruption
 - ScriptableObject-based game and content data
 - Event-driven communication through a ScriptableObject game channel
-- Cloud save, authentication and online leaderboards
+- Authentication, cloud save and online leaderboards
 - Firebase Realtime Database integration
-- Android release and monetization experience
+- Android build and Google Play release workflow
+- Advertising integration
 - Experimental multiplayer/netcode work during development
-
-## Game Design
-
-The original concept was inspired by the accessibility of grid-based puzzle games and the variety/progression of randomized ability systems.
-
-Two of the main modes were:
-
-- **Zen** — score-focused puzzle gameplay
-- **Takedown** — a more progression- and combat-oriented mode with block power, bosses and waves
-
-A central part of the design was the block system. Blocks could have different rarities and abilities, allowing the puzzle layer to interact with progression and combat mechanics rather than relying only on shape placement.
 
 ## My Role
 
@@ -37,13 +49,16 @@ This was a **solo personal project**, so I worked across the full development cy
 
 - Game concept and game design
 - Gameplay and systems programming
-- UI/UX implementation
-- Visual and audio integration
-- Progression, scoring and balancing
+- Block abilities, progression and balancing
+- UI/UX design and implementation
+- Final in-game art design
+- Music and sound design
 - Backend/cloud integration
 - Android builds and Google Play release
-- Ads/monetization integration
+- Advertising integration
 - Testing, iteration and maintenance
+
+All final in-game artwork, music and sound effects used in the released game were created by me. Some development-only third-party assets existed in the original private Unity project, but they are not part of this public showcase repository.
 
 ## Tech Stack
 
@@ -55,7 +70,7 @@ This was a **solo personal project**, so I worked across the full development cy
 | Online Services | Unity Authentication, Cloud Save, Leaderboards |
 | Backend | Firebase Realtime Database |
 | Mobile | Android / Google Play |
-| Additional | Unity Ads / IAP, URP, experimental Unity Netcode |
+| Additional | Unity Ads, URP, experimental Unity Netcode |
 
 ## Curated Source Code
 
@@ -72,11 +87,11 @@ The code is preserved primarily as a **historical portfolio sample**. It reflect
 
 ## Screenshots & Gameplay
 
-Play Store screenshots and gameplay media will be added here from the archived release material.
+Archived Google Play artwork and gameplay screenshots will be added here.
 
 ## Archived Android Build
 
-An archived APK may be provided through GitHub Releases.
+A tested archived APK of the playable version can be provided through GitHub Releases.
 
 Backend-dependent functionality may no longer be available because the original online services are no longer maintained.
 
@@ -93,7 +108,7 @@ This public repository intentionally excludes:
 - Firebase/production configuration
 - API/backend credentials
 - Signing keys and keystores
-- Third-party music, sound effects, UI packs and other licensed assets
+- Development-only third-party assets from the original private project
 - Large binary project assets
 - The complete historical Unity project
 
